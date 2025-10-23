@@ -45,6 +45,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 [![Watch the demo](public/demo/chat-unified-2025.gif)](https://raw.githubusercontent.com/vo-hoang-kh4ng/chatbot-ii/main/public/demo/chat-unified-2025.mp4)
 
+> Gợi ý: Nếu video không phát inline, bấm link sau để xem full trực tiếp trên GitHub:
+> https://github.com/vo-hoang-kh4ng/chatbot-ii/blob/main/public/demo/chat-unified-2025.mp4
 
 ## Features
 

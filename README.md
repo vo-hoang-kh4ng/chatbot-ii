@@ -39,6 +39,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # AI Chat App (Assignment)
 
+## Demo
+
+- **Core Chat**: `public/demo/core-chat.mp4` → http://localhost:3000/demo/core-chat.mp4
+- **Image Chat**: `public/demo/image-chat.mp4` → http://localhost:3000/demo/image-chat.mp4
+- **CSV Simple**: `public/demo/csv-simple.mp4` → http://localhost:3000/demo/csv-simple.mp4
+- **CSV Agent**: `public/demo/csv-agent.mp4` → http://localhost:3000/demo/csv-agent.mp4
+- **Chat Unified (2025)**: `public/demo/chat-unified-2025.mp4` → http://localhost:3000/demo/chat-unified-2025.mp4
+
+Đặt video demo vào thư mục `public/demo/` với các tên trên để các liên kết hoạt động. Nếu chưa có, bạn có thể đổi tên tệp tùy ý và cập nhật lại liên kết bên trên.
+
 ## Features
 
 - **Core Chat**: đa lượt, hiển thị ai nói gì và khi nào, markdown cơ bản, trạng thái đang trả lời.
@@ -101,3 +111,42 @@ Mở http://localhost:3000
 
 - Secrets giữ trong `.env`; không commit khóa.
 - CSV lớn được chặn ở mức 10MB ở UI. Có thể tăng tùy ý.
+
+---
+
+## CSV Agent (tùy chọn)
+
+Microservice Python dùng LangChain `create_pandas_dataframe_agent` để trả lời câu hỏi tự nhiên về CSV (vd: "Plot a histogram of price"). UI có chế độ "Agent" sẽ gọi service này qua HTTP.
+
+### Cách chạy CSV Agent
+
+```bash
+# vào thư mục microservice
+cd csv-agent
+
+# khuyến nghị tạo venv (tùy chọn)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# cài thư viện
+pip install -r requirements.txt
+
+# đặt API key (dùng cùng key với Next.js)
+export OPENAI_API_KEY=your-api-key-here
+
+# chạy service
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Service sẽ chạy ở `http://localhost:8000`:
+
+- Health check: `GET /health` → `{ "status": "ok" }`
+- Hỏi agent: `POST /ask` (multipart form)
+  - Trường: `question` (bắt buộc) + một trong `csv_url` | `file` | `csv_text`
+  - Response: `{ answer: string, image_base64?: string }`
+
+### Dùng trong UI
+
+- Vào tab **CSV Data Chat** → chọn **Chế độ: Agent (Python/LangChain)**.
+- Cung cấp CSV (URL hoặc file), nhập câu hỏi tự nhiên rồi bấm "Hỏi Agent".
+- Nếu agent vẽ biểu đồ, UI sẽ hiển thị ảnh (base64) trả về.

@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python (csv-agent)
+**/.venv/
+**/__pycache__/
+**/*.pyc
+csv-agent/.venv/
+
+# OS/editor
+.idea/
+.vscode/
+
+# media: ignore mp4 globally except demo videos placed under public/demo
+*.mp4
+!public/demo/*.mp4

@@ -41,13 +41,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Demo
 
-- **Core Chat**: `public/demo/core-chat.mp4` → http://localhost:3000/demo/core-chat.mp4
-- **Image Chat**: `public/demo/image-chat.mp4` → http://localhost:3000/demo/image-chat.mp4
-- **CSV Simple**: `public/demo/csv-simple.mp4` → http://localhost:3000/demo/csv-simple.mp4
-- **CSV Agent**: `public/demo/csv-agent.mp4` → http://localhost:3000/demo/csv-agent.mp4
 - **Chat Unified (2025)**: `public/demo/chat-unified-2025.mp4` → http://localhost:3000/demo/chat-unified-2025.mp4
 
-Đặt video demo vào thư mục `public/demo/` với các tên trên để các liên kết hoạt động. Nếu chưa có, bạn có thể đổi tên tệp tùy ý và cập nhật lại liên kết bên trên.
+<div align="left">
+  <video src="public/demo/chat-unified-2025.mp4" controls preload="metadata" width="720">
+    Your browser does not support the video tag. You can download it
+    <a href="public/demo/chat-unified-2025.mp4">here</a>.
+  </video>
+  
+  <!-- GitHub sometimes requires absolute RAW links for inline playback. If the video doesn't render above, open the link directly. -->
+</div>
 
 ## Features
 

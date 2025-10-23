@@ -44,12 +44,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - **Chat Unified (2025)**: `public/demo/chat-unified-2025.mp4` → http://localhost:3000/demo/chat-unified-2025.mp4
 
 <div align="left">
-  <video src="public/demo/chat-unified-2025.mp4" controls preload="metadata" width="720">
+  <video src="https://github.com/vo-hoang-kh4ng/chatbot-ii/blob/main/public/demo/chat-unified-2025.mp4?raw=1" controls preload="metadata" width="720">
     Your browser does not support the video tag. You can download it
-    <a href="public/demo/chat-unified-2025.mp4">here</a>.
+    <a href="https://github.com/vo-hoang-kh4ng/chatbot-ii/blob/main/public/demo/chat-unified-2025.mp4?raw=1">here</a>.
   </video>
-  
-  <!-- GitHub sometimes requires absolute RAW links for inline playback. If the video doesn't render above, open the link directly. -->
 </div>
 
 ## Features

@@ -42,12 +42,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Demo
 
 - **Chat Unified (2025)**: `public/demo/chat-unified-2025.mp4` → http://localhost:3000/demo/chat-unified-2025.mp4
-- **Google Drive (Demo assets/folder)**: https://drive.google.com/drive/folders/11y8MzZDbNPkePS9CPEcMAtAusD5zKtq3?usp=sharing
 
-[![Watch the demo](public/demo/chat-unified-2025.gif)](https://raw.githubusercontent.com/vo-hoang-kh4ng/chatbot-ii/main/public/demo/chat-unified-2025.mp4)
+
 
 > Lưu ý: Video đầy đủ khá dài nên README chỉ hiển thị GIF xem trước (vài giây).
-> Muốn xem full, bấm liên kết sau: https://github.com/vo-hoang-kh4ng/chatbot-ii/blob/main/public/demo/chat-unified-2025.mp4
+> Muốn xem full, bấm liên kết sau: https://drive.google.com/drive/folders/11y8MzZDbNPkePS9CPEcMAtAusD5zKtq3?usp=sharing
+
 
 ## Features
 
